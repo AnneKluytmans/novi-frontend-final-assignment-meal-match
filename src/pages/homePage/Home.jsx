@@ -1,5 +1,6 @@
 import Button from '../../components/button/Button.jsx';
 import Loader from '../../components/loader/Loader.jsx';
+import ErrorMessage from '../../components/errorMessage/ErrorMessage.jsx';
 import './Home.css';
 
 
@@ -19,6 +20,7 @@ function Home() {
               </Button>
               <Loader text="Finding delicious recipes just for you...🍝"/>
               <Loader />
+              <ErrorMessage message="Something went wrong..." />
           </div>
       </div>
     );
