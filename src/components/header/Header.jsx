@@ -3,7 +3,7 @@ import './Header.css';
 function Header( { title, subtitle, icon } ) {
     return (
         <header className="header outer-content-container">
-            <div className="header__content-wrapper inner-content-container__row">
+            <div className="header__content-wrapper">
                 <div className="header__text-wrapper">
                     <h1>{title}</h1>
                     <h3>{subtitle}</h3>

@@ -1,7 +1,25 @@
+/*////////////////////////
+    Table of Contents
+    1. Header styling
+    2. Header Mediaqueries
+ ////////////////////////*/
+
 /* ------------------------------- 1. Header styling -------------------------------- */
 
 .header {
     background-color: var(--primary);
+}
+
+.header__content-wrapper {
+    flex-basis: 80rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3rem 0;
+    margin: 0 5rem;
 }
 
 .header__text-wrapper {
@@ -12,7 +30,7 @@
     background-color: var(--primary-dark);
     border-radius: 50%;
     height: 10rem;
-    flex-basis: 10rem;
+    width: 10rem;
     flex-shrink: 0;
 
     display: flex;
@@ -21,3 +39,22 @@
 
     margin-left: 3rem;
 }
+
+
+/* ------------------------------- 2. Header mediaqueries -------------------------------- */
+
+@media screen and (max-width: 767px) {
+    .header__content-wrapper {
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    .header__text-wrapper {
+        flex-basis: auto;
+    }
+
+    .header__icon-wrapper {
+        margin-bottom: 2rem;
+    }
+}
+
