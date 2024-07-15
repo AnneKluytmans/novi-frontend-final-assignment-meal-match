@@ -5,6 +5,7 @@ import Loader from '../../components/loader/Loader.jsx';
 import ErrorMessage from '../../components/errorMessage/ErrorMessage.jsx';
 import Logo from '../../components/logo/Logo.jsx';
 import './Home.css';
+import NavLinkItem from "../../components/navigation/navLinkItem/NavLinkItem.jsx";
 
 
 
@@ -21,6 +22,8 @@ function Home() {
               <div className="inner-content-container__column">
                   <Logo />
                   <h1>Home</h1>
+                  <NavLinkItem to="/" name="Home"/>
+                  <NavLinkItem to="/contact" name="Contact"/>
                   <Button
                       type="button"
                       className="btn__default"

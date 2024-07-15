@@ -1,0 +1,26 @@
+/* ------------------------------- 1. NavLinkItem styling -------------------------------- */
+
+.nav-link-item {
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-link-item p {
+    font-size: 0.9rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link-item .active-link {
+    color: var(--primary);
+}
+
+.nav-link-item .active-link p {
+    font-weight: 500;
+}
+
+.nav-link-item .default-link {
+    color: var(--light);
+}
