@@ -48,3 +48,13 @@ main {
     margin-top: 5rem;
 }
 
+
+
+
+/* ------------------------------- 3. Mediaqueries -------------------------------- */
+
+@media screen and (max-width: 767px) {
+    .inner-content-container__row {
+        flex-direction: column-reverse;
+    }
+}
