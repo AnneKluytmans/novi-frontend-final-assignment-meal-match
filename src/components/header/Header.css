@@ -1,0 +1,51 @@
+/*////////////////////////
+    Table of Contents
+    1. Header styling
+    2. Header Mediaqueries
+ ////////////////////////*/
+
+/* ------------------------------- 1. Header styling -------------------------------- */
+
+.header {
+    background-color: var(--primary);
+}
+
+.header__content-wrapper {
+    margin: 0 5rem;
+}
+
+.header__text-wrapper {
+    flex-basis: 40rem;
+}
+
+.header__icon-wrapper {
+    background-color: var(--primary-dark);
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 3rem;
+}
+
+
+/* ------------------------------- 2. Header mediaqueries -------------------------------- */
+
+@media screen and (max-width: 767px) {
+    .header__content-wrapper {
+        text-align: center;
+    }
+
+    .header__text-wrapper {
+        flex-basis: auto;
+    }
+
+    .header__icon-wrapper {
+        margin-bottom: 2rem;
+    }
+}
+
