@@ -1,0 +1,23 @@
+/* ------------------------------- 1. Header styling -------------------------------- */
+
+.header {
+    background-color: var(--primary);
+}
+
+.header__text-wrapper {
+    flex-basis: 40rem;
+}
+
+.header__icon-wrapper {
+    background-color: var(--primary-dark);
+    border-radius: 50%;
+    height: 10rem;
+    flex-basis: 10rem;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 3rem;
+}

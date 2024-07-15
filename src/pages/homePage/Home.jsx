@@ -15,7 +15,7 @@ function Home() {
           <Header
           title="Home Page"
           subtitle="Welcome to Meal Match. Start your culinary adventure."
-          icon={<House size={120} color="#D8F499"/>}
+          icon={<House size={120} color={"#D8F499"} />}
           />
           <div className="outer-content-container">
               <div className="inner-content-container__column">
@@ -23,7 +23,7 @@ function Home() {
                   <h1>Home</h1>
                   <Button
                       type="button"
-                      className="button"
+                      className="btn__default"
                       onClick={() => { console.log("This button is clicked!"); }}
                   >
                       Try it now
