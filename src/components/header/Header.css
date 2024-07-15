@@ -35,7 +35,7 @@
 
 /* ------------------------------- 2. Header mediaqueries -------------------------------- */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .header__content-wrapper {
         text-align: center;
     }
