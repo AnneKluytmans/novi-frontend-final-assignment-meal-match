@@ -1,3 +1,9 @@
+/*////////////////////////
+    Table of Contents
+    1. Footer styling
+    2. Footer Mediaqueries
+ ////////////////////////*/
+
 /* ------------------------------- Footer styling -------------------------------- */
 
 .footer {
@@ -8,13 +14,14 @@
     background: var(--primary-20);
 }
 
+
 .footer__nav-links-wrapper {
     list-style: none;
-    min-width: 10rem;
-}
-
-.footer__nav-link {
-    margin: 0.5rem 0;
+    flex-basis: 10rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 
@@ -52,4 +59,23 @@
 .footer__social-link:hover {
     transform: scale(1.1);
     opacity: 0.8;
+}
+
+
+/* ------------------------------- Footer Mediaqueries -------------------------------- */
+
+@media screen and (max-width: 767px) {
+    .footer__nav-links-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        flex-basis: auto;
+        gap: 2rem;
+        margin: 1rem 0 1.5rem;
+    }
+
+    .footer__text-wrapper {
+        order: -2;
+    }
 }
