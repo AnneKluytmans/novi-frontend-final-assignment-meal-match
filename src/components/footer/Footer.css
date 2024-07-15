@@ -1,0 +1,10 @@
+/* ------------------------------- Footer styling -------------------------------- */
+
+.footer {
+    background: var(--primary);
+    padding: 1.5em 2.5em;
+}
+
+.footer--light {
+    background: var(--primary-20);
+}
