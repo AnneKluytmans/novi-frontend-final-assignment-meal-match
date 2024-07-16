@@ -19,7 +19,7 @@ function NavBar() {
             <div className="nav-bar__container">
                 <Logo/>
                 <div className="nav-bar__links-wrapper">
-                    <ul className="nav-bar__nav-links">
+                    <ul className="nav-links-wrapper">
                         <NavItem to="/" name="Home"/>
                         <NavItem to="/recipe-quiz" name="Recipe Quiz"/>
                         <NavItem to="/search-by-ingredients" name="Ingredient search"/>

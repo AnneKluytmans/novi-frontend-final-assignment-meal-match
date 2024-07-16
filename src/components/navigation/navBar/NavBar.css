@@ -1,4 +1,10 @@
-/* ------------------------------- NavBar styling -------------------------------- */
+/*////////////////////////
+    Table of Contents
+    1. NavBar styling
+    2. NavBar Mediaqueries
+ ////////////////////////*/
+
+/* ------------------------------- 1. NavBar styling -------------------------------- */
 
 .nav-bar {
     background: var(--dark);
@@ -30,13 +36,16 @@
     width: 100%;
 }
 
-.nav-bar__nav-links {
+.nav-links-wrapper {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
+.profile-links-wrapper {
+    display: flex;
+}
 
 .nav-bar__profile-links {
     list-style: none;
@@ -55,4 +64,21 @@
     color: var(--primary);
     transform: scale(1.1);
 }
+
+
+
+/* ------------------------------- 2. NavBar Mediaqueries -------------------------------- */
+
+@media screen and (max-width: 1200px) {
+    .nav-links-wrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .profile-links-wrapper {
+        display: none;
+    }
+}
+
 
