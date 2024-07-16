@@ -1,19 +1,15 @@
 /* ------------------------------- Logo styling -------------------------------- */
 
 .logo {
-    margin: 0 0.5rem;
-}
-
-.logo > * {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .logo__icon {
     width: 2.75rem;
     height: 2.75rem;
     fill: var(--primary);
-
-    margin-right: 0.5rem;
 }
 
 .logo__text {
