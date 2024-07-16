@@ -1,3 +1,9 @@
+/*////////////////////////
+    Table of Contents
+    1. NavItem styling
+    2. Hover transformation
+////////////////////////*/
+
 /* ------------------------------- 1. NavLinkItem styling -------------------------------- */
 
 .nav-link-item {
@@ -23,4 +29,23 @@
 
 .nav-link-item .default-link {
     color: var(--light);
+}
+
+
+/* ------------------------------- 2. Hover transformation -------------------------------- */
+
+.nav-link-item p::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    height: 2px;
+    width: 0;
+    background-color: var(--primary);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link-item p:hover::after {
+    width: 100%;
 }
