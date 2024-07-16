@@ -4,37 +4,37 @@
     2. Hover transformation
 ////////////////////////*/
 
-/* ------------------------------- 1. NavLinkItem styling -------------------------------- */
+/* ------------------------------- 1. NavLink styling -------------------------------- */
 
-.nav-link-item {
+.nav-link {
     text-decoration: none;
 
     display: flex;
     align-items: center;
 }
 
-.nav-link-item p {
+.nav-link p {
     font-size: 0.9rem;
     position: relative;
     transition: all 0.3s ease;
 }
 
-.nav-link-item .active-link {
+.nav-link .active-link {
     color: var(--primary);
 }
 
-.nav-link-item .active-link p {
+.nav-link .active-link p {
     font-weight: 500;
 }
 
-.nav-link-item .default-link {
+.nav-link .default-link {
     color: var(--light);
 }
 
 
 /* ------------------------------- 2. Hover transformation -------------------------------- */
 
-.nav-link-item p::after {
+.nav-link p::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -46,6 +46,6 @@
     transform: translateX(-50%);
 }
 
-.nav-link-item p:hover::after {
+.nav-link p:hover::after {
     width: 100%;
 }
