@@ -1,6 +1,6 @@
 /* ------------------------------- Dropdown NavLink styling -------------------------------- */
 
-.dropdown__nav-link-item {
+.dropdown__link {
     text-decoration: none;
     width: 100%;
     padding: 0.5rem;
@@ -8,12 +8,12 @@
     transition: border-color 0.5s ease, color 0.5s ease;
 }
 
-.active-nav-link p {
+.active-dropdown-link p {
     font-weight: 800;
     font-size: 1.1rem;
 }
 
-.dropdown__nav-link-item:hover {
+.dropdown__link:hover {
     border-bottom: 1px solid var(--secondary-orange);
 }
 
