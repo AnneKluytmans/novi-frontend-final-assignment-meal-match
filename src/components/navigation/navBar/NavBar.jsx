@@ -5,10 +5,11 @@ import NavItem from '../navItem/NavItem.jsx';
 import NavItemDropdown from '../navItemDropdown/NavItemDropdown.jsx';
 import NavItemDropdownLink from '../navItemDropdownLink/NavItemDropdownLink.jsx';
 import './NavBar.css';
+import HamburgerMenu from "../hamburgerMenu/HamburgerMenu.jsx";
 
 
 function NavBar() {
-    const isAuth = false;
+    const isAuth = true;
 
     function signOut(){
         console.log("The user is signed out");
@@ -19,6 +20,7 @@ function NavBar() {
             <div className="nav-bar__container">
                 <Logo/>
                 <div className="nav-bar__links-wrapper">
+                    <HamburgerMenu />
                     <ul className="nav-links-wrapper">
                         <NavItem to="/" name="Home"/>
                         <NavItem to="/recipe-quiz" name="Recipe Quiz"/>
