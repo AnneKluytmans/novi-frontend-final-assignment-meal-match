@@ -27,6 +27,7 @@
     gap: 1.5rem;
 }
 
+
 .nav-bar__links-wrapper {
     display: flex;
     justify-content: space-between;
@@ -42,6 +43,8 @@
     align-items: center;
     gap: 0.5rem;
 }
+
+
 
 .profile-links-wrapper {
     display: flex;
@@ -67,16 +70,50 @@
 
 
 
+.hamburger-menu__small-desktop {
+    display: none;
+}
+
+.hamburger-menu__mobile {
+    display: none;
+}
+
+
+.hamburger-menu__sign-out-link {
+    font-size: 1.1rem;
+    color: var(--primary-dark);
+    text-align: left;
+    width: 100%;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--primary-dark);
+    transition: border-color 0.5s ease, color 0.5s ease;
+}
+
+.hamburger-menu__sign-out-link:hover {
+    color: var(--secondary-orange);
+    border-bottom: 1px solid var(--secondary-orange);
+}
+
+
 /* ------------------------------- 2. NavBar Mediaqueries -------------------------------- */
 
 @media screen and (max-width: 1200px) {
     .nav-links-wrapper {
         display: none;
     }
+    .hamburger-menu__small-desktop {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .profile-links-wrapper {
+        display: none;
+    }
+    .hamburger-menu__mobile {
+        display: flex;
+    }
+    .hamburger-menu__small-desktop {
         display: none;
     }
 }

@@ -13,7 +13,7 @@ function HamburgerMenu( { children }) {
         >
             <NavItemDropdownLink to="/" name="Home" />
             <NavItemDropdownLink to="/recipe-quiz" name="Recipe Quiz" />
-            <NavItemDropdownLink to="/ingredient-search" name="Ingredient Search" />
+            <NavItemDropdownLink to="/search-by-ingredients" name="Ingredient Search" />
             <NavItemDropdownLink to="/all-recipes" name="All Recipes" />
             <NavItemDropdownLink to="/contact" name="Contact" />
             <NavItemDropdownLink to="/faq" name="Faq" />

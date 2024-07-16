@@ -20,7 +20,27 @@ function NavBar() {
             <div className="nav-bar__container">
                 <Logo/>
                 <div className="nav-bar__links-wrapper">
-                    <HamburgerMenu />
+                    <div className="hamburger-menu__small-desktop">
+                        <HamburgerMenu/>
+                    </div>
+                    <div className="hamburger-menu__mobile">
+                        <HamburgerMenu>
+                            {isAuth ?
+                                <>
+                                    <NavItemDropdownLink to="/profile" name="Profile"/>
+                                    <NavItemDropdownLink to="/favorite-recipes" name="Favorite Recipes"/>
+                                    <button type="button" onClick={signOut}>
+                                        <p className="hamburger-menu__sign-out-link">Sign Out</p>
+                                    </button>
+                                </>
+                                :
+                                <>
+                                    <NavItemDropdownLink to="/sign-in" name="Sign In"/>
+                                    <NavItemDropdownLink to="/sign-up" name="Sign Up"/>
+                                </>
+                            }
+                        </ HamburgerMenu>
+                    </div>
                     <ul className="nav-links-wrapper">
                         <NavItem to="/" name="Home"/>
                         <NavItem to="/recipe-quiz" name="Recipe Quiz"/>
@@ -30,9 +50,9 @@ function NavBar() {
                             title="Help & Support"
                             className="dropdown__nav-bar--default"
                         >
-                            <NavItemDropdownLink to="/contact" name="Contact" />
-                            <NavItemDropdownLink to="/faq" name="Faq" />
-                            <NavItemDropdownLink to="/terms-and-policy" name="Terms and Policy" />
+                            <NavItemDropdownLink to="/contact" name="Contact"/>
+                            <NavItemDropdownLink to="/faq" name="Faq"/>
+                            <NavItemDropdownLink to="/terms-and-policy" name="Terms and Policy"/>
                         </NavItemDropdown>
                     </ul>
                     <ul className="profile-links-wrapper">
