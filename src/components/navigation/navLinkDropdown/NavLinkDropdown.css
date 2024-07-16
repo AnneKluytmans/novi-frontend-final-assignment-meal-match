@@ -1,0 +1,6 @@
+/* ------------------------------- NavLinks Dropdown styling -------------------------------- */
+
+.nav-link__dropdown {
+    display: flex;
+    align-items: center;
+}
