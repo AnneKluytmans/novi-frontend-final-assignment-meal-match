@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import './NavLinkDropdownLink.css';
+import './NavItemDropdownLink.css';
 
-function NavLinkDropdownLink({ to, name } ) {
+function NavItemDropdownLink({ to, name } ) {
     return (
         <NavLink to={to} className={({ isActive }) =>
             `dropdown__link ${isActive ? 'active-dropdown-link' : 'default-dropdown-link'}`
@@ -11,4 +11,4 @@ function NavLinkDropdownLink({ to, name } ) {
     );
 }
 
-export default NavLinkDropdownLink;
+export default NavItemDropdownLink;

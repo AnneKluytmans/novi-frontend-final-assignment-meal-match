@@ -29,9 +29,9 @@
 
 /* ------------------------------- 2. Dropdowns NavBar styling -------------------------------- */
 
-/* ------------------------------- 2.1 Dropdown NavLink header styling -------------------- */
+/* ------------------------------- 2.1 Dropdown NavItem header styling -------------------- */
 
-.dropdown__nav-link .dropdown__header {
+.dropdown__nav-item .dropdown__header {
     color: var(--light);
     font-size: 0.9em;
     letter-spacing: 1px;
@@ -40,7 +40,7 @@
     transition: color 0.3s ease;
 }
 
-.dropdown__nav-link .dropdown__header::after {
+.dropdown__nav-item .dropdown__header::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -52,7 +52,7 @@
     transform: translateX(-50%);
 }
 
-.dropdown__nav-link .dropdown__header:hover::after {
+.dropdown__nav-item .dropdown__header:hover::after {
     width: 100%;
 }
 
@@ -80,7 +80,7 @@
 
 
 
-.dropdown__nav-link .dropdown__content {
+.dropdown__nav-item .dropdown__content {
     margin: 1.4rem 0 0 -1.25rem;
 }
 
