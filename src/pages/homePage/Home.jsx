@@ -5,6 +5,7 @@ import Loader from '../../components/loader/Loader.jsx';
 import ErrorMessage from '../../components/errorMessage/ErrorMessage.jsx';
 import Logo from '../../components/logo/Logo.jsx';
 import './Home.css';
+import NavBar from "../../components/navigation/navBar/NavBar.jsx";
 
 
 
@@ -16,6 +17,7 @@ function Home() {
           subtitle="Welcome to Meal Match. Start your culinary adventure."
           icon={<House size={120} color={"#D8F499"} />}
           />
+          <NavBar />
           <div className="outer-content-container">
               <div className="inner-content-container__column">
                   <Logo />
