@@ -1,0 +1,21 @@
+/* ------------------------------- 1. Global dropdown styling -------------------------------- */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dropdown__icon {
+    margin-top: 0.5rem;
+}
+
+.dropdown__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem 0;
+}
