@@ -5,7 +5,7 @@ function Header( { title, subtitle, icon } ) {
         <header className="header outer-content-container">
             <div className="header__content-wrapper inner-content-container__row">
                 <div className="header__text-wrapper">
-                    <h1>{title}</h1>
+                    <h1 className="header__text-title">{title}</h1>
                     <h3>{subtitle}</h3>
                 </div>
                 <div className="header__icon-wrapper">

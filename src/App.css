@@ -44,7 +44,7 @@
 main {
     background-color: var(--light);
     width: 100%;
-    min-height: 95vh;
+    min-height: 90vh;
     margin-top: 5rem;
 }
 
@@ -53,7 +53,7 @@ main {
 
 /* ------------------------------- 3. Mediaqueries -------------------------------- */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 678px) {
     .inner-content-container__row {
         flex-direction: column-reverse;
     }
