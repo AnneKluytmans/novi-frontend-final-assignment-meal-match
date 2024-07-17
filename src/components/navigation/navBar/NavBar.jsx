@@ -59,12 +59,12 @@ function NavBar() {
                         {isAuth ?
                             <div className="nav-bar__profile-links">
                                 <li>
-                                    <NavLink to="/profile-page">
+                                    <NavLink to="/profile">
                                         <User size={24} weight="bold" className="nav-bar__profile-link"/>
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/favorite-recipes">
+                                    <NavLink to="/favorite-recipes" >
                                         <Heart size={24} weight="bold" className="nav-bar__profile-link"/>
                                     </NavLink>
                                 </li>
