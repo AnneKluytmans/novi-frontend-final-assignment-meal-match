@@ -1,0 +1,40 @@
+/* ------------------------------- Section divider styling -------------------------------- */
+
+.section-divider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 2rem 0;
+}
+
+.section-divider h2 {
+    color: var(--primary-dark);
+    letter-spacing: 3px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.section-divider__divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.section-divider__line {
+    flex-grow: 1;
+    height: 3px;
+    background-color: var(--primary-dark);
+    border-radius: 2px;
+}
+
+.section-divider__logo {
+    width: 2.75rem;
+    height: 2.75rem;
+    stroke: var(--primary-dark);
+    fill: var(--primary-dark);
+    margin: 0 0.5rem;
+}
+
+

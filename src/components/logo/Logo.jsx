@@ -1,5 +1,6 @@
-import './Logo.css';
 import LogoIcon from '../../assets/svg-icons/logo-icon.svg?react';
+import './Logo.css';
+
 
 function Logo() {
     return (

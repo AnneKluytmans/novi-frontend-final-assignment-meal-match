@@ -18,9 +18,14 @@
     flex-basis: 40rem;
 }
 
+.header__text-title {
+    margin-block-end: 1.25rem;
+}
+
 .header__icon-wrapper {
     background-color: var(--primary-dark);
     border-radius: 50%;
+    color: var(--primary);
     height: 10rem;
     width: 10rem;
     flex-shrink: 0;
@@ -35,7 +40,7 @@
 
 /* ------------------------------- 2. Header mediaqueries -------------------------------- */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 678px) {
     .header__content-wrapper {
         text-align: center;
     }
@@ -46,6 +51,14 @@
 
     .header__icon-wrapper {
         margin-bottom: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .header__icon-wrapper {
+        height: 11rem;
+        width: 11rem;
     }
 }
 

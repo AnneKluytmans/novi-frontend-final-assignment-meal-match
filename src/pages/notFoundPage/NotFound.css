@@ -1,1 +1,27 @@
 /* ------------------------------- Not found page styling -------------------------------- */
+
+.not-found-section {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.not-found-section__text-restrictor {
+    max-width: 40rem;
+}
+
+.not-found-section__links-wrapper {
+    max-width: 25rem;
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.not-found-section__links-wrapper p {
+    font-size: 1.1rem;
+}
+
+.not-found-section__link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
