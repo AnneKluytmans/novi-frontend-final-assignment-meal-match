@@ -64,7 +64,7 @@
 
 /* ------------------------------- Footer Mediaqueries -------------------------------- */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .footer__nav-links-wrapper {
         flex-direction: row;
         justify-content: space-between;
