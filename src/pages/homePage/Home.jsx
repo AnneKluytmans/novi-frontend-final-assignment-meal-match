@@ -5,6 +5,7 @@ import Loader from '../../components/loader/Loader.jsx';
 import ErrorMessage from '../../components/errorMessage/ErrorMessage.jsx';
 import Logo from '../../components/logo/Logo.jsx';
 import './Home.css';
+import SectionDivider from "../../components/sectionDivider/SectionDivider.jsx";
 
 
 
@@ -18,6 +19,8 @@ function Home() {
           />
           <div className="outer-content-container">
               <div className="inner-content-container__column">
+                  <SectionDivider
+                  title="features"/>
                   <Logo />
                   <h1>Home</h1>
                   <Button
